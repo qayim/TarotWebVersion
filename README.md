@@ -16,7 +16,7 @@ Open `http://localhost:5173/Tarot/` (Vite uses the `/Tarot/` base path to match 
 
 Pushes to `master` run `.github/workflows/deploy-web.yml`, which builds this folder and publishes to GitHub Pages.
 
-Live site: **https://qayim.github.io/Tarot/**
+Live site: **https://qayim.github.io/TarotWebVersion/**
 
 ## Features
 
