@@ -32,7 +32,7 @@ body::before {
   inset: 0;
   z-index: -1;
   background-color: #000000;
-  background-image: url('/Tarot/assets/background4.png');
+  background-image: var(--page-background-image);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

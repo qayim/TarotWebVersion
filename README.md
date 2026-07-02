@@ -10,11 +10,11 @@ npm install
 npm run dev
 ```
 
-Open `http://localhost:5173/Tarot/` (Vite uses the `/Tarot/` base path to match GitHub Pages).
+Open `http://localhost:5173/TarotWebVersion/` (Vite uses the `/TarotWebVersion/` base path to match GitHub Pages).
 
 ## Deploy
 
-Pushes to `master` run `.github/workflows/deploy-web.yml`, which builds this folder and publishes to GitHub Pages.
+Pushes to `main` run `.github/workflows/deploy-web.yml`, which builds this folder and publishes to GitHub Pages.
 
 Live site: **https://qayim.github.io/TarotWebVersion/**
 

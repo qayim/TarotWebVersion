@@ -6,9 +6,16 @@ import FavoritesProvider from './context/FavoritesContext';
 import GeminiSettingsProvider from './context/GeminiSettingsContext';
 import './index.css';
 
+const baseUrl = import.meta.env.BASE_URL.replace(/\/$/, '');
+
+document.documentElement.style.setProperty(
+  '--page-background-image',
+  `url("${import.meta.env.BASE_URL}assets/background4.png")`
+);
+
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <BrowserRouter basename="/Tarot">
+    <BrowserRouter basename={baseUrl}>
       <GeminiSettingsProvider>
         <FavoritesProvider>
           <App />
