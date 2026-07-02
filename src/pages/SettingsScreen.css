@@ -1,0 +1,131 @@
+.settings {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  padding-bottom: 2rem;
+}
+
+.settings__panel {
+  width: min(98%, 680px);
+  margin: 0 auto;
+  padding: clamp(1rem, 3vw, 1.5rem);
+  border-radius: 20px;
+  border: 5px solid #edbe28;
+  background: rgba(0, 0, 0, 0.72);
+}
+
+.settings__heading {
+  color: #f0ca4a;
+  font-size: clamp(1.1rem, 3vw, 1.35rem);
+  margin-bottom: 0.75rem;
+}
+
+.settings__subheading {
+  color: #edbe28;
+  font-size: 1rem;
+  margin-bottom: 0.75rem;
+}
+
+.settings__last {
+  margin-bottom: 1.25rem;
+  padding-bottom: 1.25rem;
+  border-bottom: 1px solid #60594d;
+}
+
+.settings__meta {
+  color: #889094;
+  font-size: 0.8rem;
+  margin-top: 0.5rem;
+}
+
+.settings__note {
+  color: #a99479;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+.settings__note a {
+  color: #edbe28;
+  text-decoration: underline;
+}
+
+.settings__field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  margin-bottom: 1rem;
+  color: #eaeaea;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.settings__field input,
+.settings__field select {
+  width: 100%;
+  padding: 0.85rem 1rem;
+  border-radius: 12px;
+  border: 2px solid #60594d;
+  background: #111111;
+  color: #f0ca4a;
+  font: inherit;
+}
+
+.settings__field input:focus,
+.settings__field select:focus {
+  outline: 2px solid #edbe28;
+  border-color: #edbe28;
+}
+
+.settings__pricing {
+  color: #889094;
+  font-size: 0.85rem;
+  line-height: 1.45;
+}
+
+.settings__stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.settings__stat {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  padding: 0.85rem;
+  border-radius: 12px;
+  border: 2px solid #60594d;
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.settings__stat--highlight {
+  border-color: #edbe28;
+  background: rgba(237, 190, 40, 0.08);
+}
+
+.settings__stat-label {
+  color: #a99479;
+  font-size: 0.8rem;
+}
+
+.settings__stat strong {
+  color: #f0ca4a;
+  font-size: clamp(1rem, 2.5vw, 1.2rem);
+}
+
+.settings__reset {
+  width: 100%;
+  padding: 0.85rem 1rem;
+  border-radius: 12px;
+  border: 2px solid #889094;
+  background: transparent;
+  color: #eaeaea;
+  font-weight: 700;
+  transition: background-color 0.15s ease;
+}
+
+.settings__reset:hover {
+  background: rgba(136, 144, 148, 0.15);
+}

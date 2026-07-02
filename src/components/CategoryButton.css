@@ -1,0 +1,36 @@
+.category-button {
+  display: block;
+  width: min(90%, 620px);
+  margin: 0.75rem auto;
+  padding: 1.5rem;
+  border-radius: 20px;
+  border: 5px solid #edbe28;
+  background-color: #000000;
+  color: #edbe28;
+  font-size: 1.25rem;
+  font-weight: 700;
+  text-align: center;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.category-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(237, 190, 40, 0.15);
+}
+
+.category-button--fortune {
+  border-style: dashed;
+  border-color: #eaeaea;
+  background: transparent;
+  color: #eaeaea;
+}
+
+.category-button--reading-aid {
+  border-color: #eaeaea;
+  background-color: #eaeaea;
+  color: #000000;
+}
+
+.category-button--reading-aid:hover {
+  box-shadow: 0 8px 24px rgba(234, 234, 234, 0.15);
+}

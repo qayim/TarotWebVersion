@@ -1,0 +1,79 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  min-height: 100%;
+  background-color: #000000;
+  overscroll-behavior-y: none;
+}
+
+body,
+#root {
+  min-height: 100%;
+}
+
+body {
+  position: relative;
+  z-index: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  background: transparent;
+  color: #eaeaea;
+  -webkit-font-smoothing: antialiased;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  background-color: #000000;
+  background-image: url('/Tarot/assets/background4.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  pointer-events: none;
+}
+
+button {
+  font: inherit;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.screen {
+  min-height: 100vh;
+  background: transparent;
+  padding-bottom: 2rem;
+}
+
+.screen-content {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.card-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  margin-top: 1.5rem;
+}
+
+.hint {
+  text-align: center;
+  color: #a99479;
+  font-size: 0.85rem;
+  margin-top: 0.75rem;
+  opacity: 0.85;
+}

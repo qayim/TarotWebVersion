@@ -1,0 +1,110 @@
+.gemini-panel {
+  width: min(98%, 680px);
+  margin: 1.25rem auto 0;
+}
+
+.gemini-panel__toggle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 1rem 1.25rem;
+  border-radius: 20px;
+  border: 3px dashed #889094;
+  background: rgba(0, 0, 0, 0.55);
+  color: #eaeaea;
+  font-weight: 700;
+  font-size: 1rem;
+  transition: background-color 0.15s ease, border-color 0.15s ease;
+}
+
+.gemini-panel__toggle:hover {
+  background: rgba(0, 0, 0, 0.72);
+  border-color: #edbe28;
+}
+
+.gemini-panel__toggle-icon {
+  color: #edbe28;
+  font-size: 1.35rem;
+  line-height: 1;
+}
+
+.gemini-panel__body {
+  margin-top: 0.75rem;
+  padding: clamp(0.85rem, 2.5vw, 1.25rem);
+  border-radius: 20px;
+  border: 3px solid #60594d;
+  background: rgba(0, 0, 0, 0.65);
+}
+
+.gemini-panel__intro {
+  color: #a99479;
+  font-size: 0.9rem;
+  line-height: 1.45;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.gemini-panel__field {
+  display: block;
+  color: #edbe28;
+  font-weight: 700;
+  font-size: 0.95rem;
+  margin-bottom: 0.5rem;
+}
+
+.gemini-panel__question {
+  width: 100%;
+  min-height: 5rem;
+  padding: 0.85rem 1rem;
+  margin-bottom: 0.75rem;
+  border-radius: 12px;
+  border: 2px solid #60594d;
+  background: #111111;
+  color: #eaeaea;
+  font: inherit;
+  line-height: 1.5;
+  resize: vertical;
+}
+
+.gemini-panel__question:focus {
+  outline: 2px solid #edbe28;
+  border-color: #edbe28;
+}
+
+.gemini-panel__message {
+  margin: 0.75rem 0;
+  padding: 0.75rem 1rem;
+  border-radius: 12px;
+  font-size: 0.9rem;
+  line-height: 1.45;
+  text-align: center;
+}
+
+.gemini-panel__message--warn {
+  border: 2px solid #edbe28;
+  color: #f0ca4a;
+  background: rgba(237, 190, 40, 0.08);
+}
+
+.gemini-panel__message--error {
+  border: 2px solid #c45c5c;
+  color: #ffb4b4;
+  background: rgba(196, 92, 92, 0.12);
+}
+
+.gemini-panel__link {
+  color: #edbe28;
+  text-decoration: underline;
+  font-weight: 700;
+}
+
+.gemini-panel .reading-display {
+  width: 100%;
+  margin-top: 1rem;
+  border-color: #60594d;
+}
+
+.gemini-panel__reading-note {
+  margin-top: 0;
+}

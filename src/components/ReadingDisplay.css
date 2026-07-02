@@ -1,0 +1,58 @@
+.reading-display {
+  width: min(98%, 680px);
+  margin: 1rem auto 0;
+  padding: clamp(1rem, 3vw, 1.5rem);
+  border-radius: 20px;
+  border: 5px solid #eaeaea;
+  background: rgba(0, 0, 0, 0.78);
+}
+
+.reading-display__title {
+  color: #f0ca4a;
+  font-size: clamp(1.2rem, 3vw, 1.5rem);
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.reading-display__overview {
+  margin-bottom: 1.25rem;
+  padding: clamp(0.85rem, 2.5vw, 1.15rem);
+  border-radius: 16px;
+  border: 3px solid #edbe28;
+  background: rgba(237, 190, 40, 0.1);
+}
+
+.reading-display__overview-title {
+  color: #edbe28;
+  font-size: clamp(1rem, 2.5vw, 1.15rem);
+  margin-bottom: 0.65rem;
+  text-align: center;
+}
+
+.reading-display__overview-body {
+  color: #f5e6c8;
+  font-size: clamp(0.95rem, 2.4vw, 1.05rem);
+  line-height: 1.6;
+  text-align: center;
+  white-space: pre-wrap;
+}
+
+.reading-display__body {
+  color: #eaeaea;
+  font-size: clamp(0.95rem, 2.4vw, 1.05rem);
+  line-height: 1.65;
+  white-space: pre-wrap;
+}
+
+.reading-display__note {
+  margin-top: 1rem;
+  color: #889094;
+  font-size: 0.85rem;
+  text-align: center;
+}
+
+.reading-display__link {
+  color: #edbe28;
+  text-decoration: underline;
+  font-weight: 700;
+}

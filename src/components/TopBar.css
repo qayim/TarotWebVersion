@@ -1,0 +1,85 @@
+.top-bar {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: min(98%, 680px);
+  min-height: 4rem;
+  margin: 7vh auto 0;
+  border-radius: 20px;
+  padding: 0.75rem 3rem;
+}
+
+.top-bar__title {
+  margin: 0;
+  color: #f0ca4a;
+  font-weight: 700;
+  font-size: clamp(1.25rem, 4vw, 1.6rem);
+  text-align: center;
+}
+
+button.top-bar__title--clickable {
+  cursor: pointer;
+  border: none;
+  background: none;
+  transition: transform 0.15s ease, opacity 0.15s ease;
+}
+
+button.top-bar__title--clickable:hover {
+  transform: scale(1.02);
+  opacity: 0.92;
+}
+
+.top-bar__back {
+  position: absolute;
+  left: 0.25rem;
+  top: 50%;
+  transform: translateY(-50%);
+  display: grid;
+  place-items: center;
+  width: 2.75rem;
+  height: 2.75rem;
+  border: none;
+  border-radius: 999px;
+  background: transparent;
+  color: #f0ca4a;
+  cursor: pointer;
+  transition: background-color 0.15s ease, transform 0.15s ease;
+}
+
+.top-bar__back:hover {
+  background-color: rgba(240, 202, 74, 0.12);
+  transform: translateY(-50%) scale(1.05);
+}
+
+.top-bar__settings {
+  position: absolute;
+  right: 0.25rem;
+  top: 50%;
+  transform: translateY(-50%);
+  display: grid;
+  place-items: center;
+  width: 2.75rem;
+  height: 2.75rem;
+  border: none;
+  border-radius: 999px;
+  background: transparent;
+  color: #f0ca4a;
+  cursor: pointer;
+  transition: background-color 0.15s ease, transform 0.15s ease;
+}
+
+.top-bar__settings:hover {
+  background-color: rgba(240, 202, 74, 0.12);
+  transform: translateY(-50%) scale(1.05);
+}
+
+.top-bar__back .material-symbols-outlined,
+.top-bar__settings .material-symbols-outlined {
+  font-size: 1.75rem;
+  font-variation-settings:
+    'FILL' 0,
+    'wght' 500,
+    'GRAD' 0,
+    'opsz' 24;
+}

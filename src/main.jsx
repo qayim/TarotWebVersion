@@ -1,0 +1,19 @@
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import { BrowserRouter } from 'react-router-dom';
+import App from './App';
+import FavoritesProvider from './context/FavoritesContext';
+import GeminiSettingsProvider from './context/GeminiSettingsContext';
+import './index.css';
+
+ReactDOM.createRoot(document.getElementById('root')).render(
+  <React.StrictMode>
+    <BrowserRouter basename="/Tarot">
+      <GeminiSettingsProvider>
+        <FavoritesProvider>
+          <App />
+        </FavoritesProvider>
+      </GeminiSettingsProvider>
+    </BrowserRouter>
+  </React.StrictMode>
+);
