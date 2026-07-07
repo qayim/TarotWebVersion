@@ -3,6 +3,7 @@ import './CategoryButton.css';
 const VARIANTS = {
   default: 'category-button',
   fortune: 'category-button category-button--fortune',
+  divination: 'category-button category-button--divination',
   readingAid: 'category-button category-button--reading-aid',
 };
 

@@ -12,9 +12,10 @@
 
 .top-bar__title {
   margin: 0;
-  color: #f0ca4a;
-  font-weight: 700;
-  font-size: clamp(1.25rem, 4vw, 1.6rem);
+  color: var(--color-accent-light);
+  font-family: var(--font-heading);
+  font-weight: 600;
+  font-size: clamp(1.5rem, 4vw, 1.85rem);
   text-align: center;
 }
 
@@ -42,13 +43,13 @@ button.top-bar__title--clickable:hover {
   border: none;
   border-radius: 999px;
   background: transparent;
-  color: #f0ca4a;
+  color: var(--color-accent-light);
   cursor: pointer;
   transition: background-color 0.15s ease, transform 0.15s ease;
 }
 
 .top-bar__back:hover {
-  background-color: rgba(240, 202, 74, 0.12);
+  background-color: var(--accent-tint);
   transform: translateY(-50%) scale(1.05);
 }
 
@@ -64,13 +65,13 @@ button.top-bar__title--clickable:hover {
   border: none;
   border-radius: 999px;
   background: transparent;
-  color: #f0ca4a;
+  color: var(--color-accent-light);
   cursor: pointer;
   transition: background-color 0.15s ease, transform 0.15s ease;
 }
 
 .top-bar__settings:hover {
-  background-color: rgba(240, 202, 74, 0.12);
+  background-color: var(--accent-tint);
   transform: translateY(-50%) scale(1.05);
 }
 

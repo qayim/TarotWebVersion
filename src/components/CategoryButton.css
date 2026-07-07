@@ -4,33 +4,52 @@
   margin: 0.75rem auto;
   padding: 1.5rem;
   border-radius: 20px;
-  border: 5px solid #edbe28;
-  background-color: #000000;
-  color: #edbe28;
-  font-size: 1.25rem;
-  font-weight: 700;
+  border: 2px solid var(--color-accent);
+  background-color: var(--color-surface);
+  color: var(--color-accent-light);
+  font-family: var(--font-heading);
+  font-size: 1.35rem;
+  font-weight: 600;
   text-align: center;
-  transition: transform 0.15s ease, box-shadow 0.15s ease;
+  transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
 }
 
 .category-button:hover {
   transform: translateY(-2px);
-  box-shadow: 0 8px 24px rgba(237, 190, 40, 0.15);
+  box-shadow: var(--shadow-accent);
+  border-color: var(--color-accent-light);
 }
 
 .category-button--fortune {
   border-style: dashed;
-  border-color: #eaeaea;
+  border-color: var(--color-border);
   background: transparent;
-  color: #eaeaea;
+  color: var(--color-text);
+}
+
+.category-button--fortune:hover {
+  border-color: var(--color-accent);
+  box-shadow: var(--shadow-accent);
+}
+
+.category-button--divination {
+  border-color: var(--color-accent-light);
+  background: var(--accent-tint);
+  color: var(--color-accent-light);
+}
+
+.category-button--divination:hover {
+  box-shadow: var(--shadow-accent);
 }
 
 .category-button--reading-aid {
-  border-color: #eaeaea;
-  background-color: #eaeaea;
-  color: #000000;
+  border-color: var(--color-accent);
+  background-color: var(--color-accent);
+  color: var(--color-text);
 }
 
 .category-button--reading-aid:hover {
-  box-shadow: 0 8px 24px rgba(234, 234, 234, 0.15);
+  background-color: var(--color-accent-light);
+  border-color: var(--color-accent-light);
+  box-shadow: var(--shadow-accent);
 }

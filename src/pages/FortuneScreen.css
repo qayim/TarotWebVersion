@@ -11,8 +11,8 @@
 
 .fortune__field {
   display: block;
-  color: #edbe28;
-  font-weight: 700;
+  color: var(--color-accent-light);
+  font-weight: 600;
   font-size: 1rem;
   margin-bottom: 0.5rem;
 }
@@ -22,16 +22,17 @@
   min-height: 6.5rem;
   padding: 1rem;
   border-radius: 20px;
-  border: 5px solid #edbe28;
-  background: rgba(0, 0, 0, 0.72);
-  color: #eaeaea;
+  border: 2px solid var(--color-border);
+  background: var(--color-surface);
+  color: var(--color-text);
   font: inherit;
   line-height: 1.5;
   resize: vertical;
 }
 
 .fortune__question:focus {
-  outline: 2px solid #f0ca4a;
+  outline: 2px solid var(--color-accent);
+  border-color: var(--color-accent);
 }
 
 .fortune__message {
@@ -45,22 +46,22 @@
 }
 
 .fortune__message--warn {
-  border: 2px solid #edbe28;
-  color: #f0ca4a;
-  background: rgba(237, 190, 40, 0.08);
+  border: 2px solid var(--color-accent);
+  color: var(--color-accent-light);
+  background: var(--accent-tint);
 }
 
 .fortune__message--error {
-  border: 2px solid #c45c5c;
-  color: #ffb4b4;
-  background: rgba(196, 92, 92, 0.12);
+  border: 2px solid var(--color-error);
+  color: var(--color-error-text);
+  background: var(--color-error-bg);
 }
 
 .fortune__link,
 .fortune__settings-link {
-  color: #edbe28;
+  color: var(--color-accent-light);
   text-decoration: underline;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .fortune__settings-link {
@@ -76,19 +77,21 @@
   margin: 1rem auto 0;
   padding: clamp(1rem, 3vw, 1.5rem);
   border-radius: 20px;
-  border: 5px solid #eaeaea;
-  background: rgba(0, 0, 0, 0.78);
+  border: 2px solid var(--color-border);
+  background: var(--color-surface);
 }
 
 .fortune__reading-title {
-  color: #f0ca4a;
-  font-size: clamp(1.2rem, 3vw, 1.5rem);
+  color: var(--color-accent-light);
+  font-family: var(--font-heading);
+  font-size: clamp(1.35rem, 3vw, 1.65rem);
+  font-weight: 600;
   text-align: center;
   margin-bottom: 0.75rem;
 }
 
 .fortune__reading-cost {
-  color: #889094;
+  color: var(--color-subtle);
   font-size: 0.85rem;
   text-align: center;
   margin-bottom: 1rem;
@@ -100,7 +103,7 @@
   justify-content: center;
   gap: 0.5rem 1rem;
   margin-bottom: 1rem;
-  color: #889094;
+  color: var(--color-subtle);
   font-size: 0.85rem;
   text-align: center;
 }
@@ -108,11 +111,11 @@
 .fortune__usage span {
   padding: 0.25rem 0.5rem;
   border-radius: 8px;
-  border: 1px solid #60594d;
+  border: 1px solid var(--color-border);
 }
 
 .fortune__reading-body {
-  color: #eaeaea;
+  color: var(--color-text);
   font-size: clamp(0.95rem, 2.4vw, 1.05rem);
   line-height: 1.65;
   white-space: pre-wrap;
@@ -120,7 +123,7 @@
 
 .fortune__reading-note {
   margin-top: 1rem;
-  color: #889094;
+  color: var(--color-subtle);
   font-size: 0.85rem;
   text-align: center;
 }

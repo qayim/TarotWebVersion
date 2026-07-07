@@ -3,10 +3,10 @@
   margin: 0 auto;
   padding: clamp(1rem, 3vw, 1.75rem) clamp(0.85rem, 2.5vw, 1.25rem);
   border-radius: 20px;
-  border: 10px solid #a99479;
-  background-color: #000000;
+  border: 2px solid var(--color-border);
+  background-color: var(--color-surface);
   cursor: pointer;
-  transition: transform 0.15s ease;
+  transition: transform 0.15s ease, border-color 0.15s ease;
 }
 
 .tarot-card:hover {
@@ -14,16 +14,16 @@
 }
 
 .tarot-card--favorite {
-  border-color: #f0f7ee;
-  background-color: #f0f7ee;
+  border-color: var(--color-accent-light);
+  background-color: var(--accent-light-tint);
 }
 
 .tarot-card--upright {
-  border-color: #d9b587;
+  border-color: var(--color-accent-light);
 }
 
 .tarot-card--reversed {
-  border-color: #889094;
+  border-color: var(--color-muted);
 }
 
 .tarot-card__header {
@@ -35,22 +35,23 @@
 }
 
 .tarot-card__name {
-  color: #d9b587;
-  font-size: clamp(1.4rem, 4vw, 1.85rem);
-  font-weight: 700;
+  color: var(--color-accent-light);
+  font-family: var(--font-heading);
+  font-size: clamp(1.5rem, 4vw, 1.95rem);
+  font-weight: 600;
 }
 
 .tarot-card--reversed .tarot-card__name {
-  color: #889094;
+  color: var(--color-subtle);
 }
 
 .tarot-card--favorite .tarot-card__name {
-  color: #60594d;
+  color: var(--color-text);
 }
 
 .tarot-card__meta {
-  color: #60594d;
-  font-weight: 700;
+  color: var(--color-subtle);
+  font-weight: 600;
   font-size: 1rem;
   margin-top: 0.25rem;
 }
@@ -64,8 +65,8 @@
   width: 2.5rem;
   height: 2.5rem;
   border-radius: 999px;
-  border: 2px solid #d9b587;
-  color: #d9b587;
+  border: 2px solid var(--color-accent-light);
+  color: var(--color-accent-light);
   font-size: 1.35rem;
   line-height: 1;
   display: grid;
@@ -73,18 +74,18 @@
 }
 
 .tarot-card__favorite--active {
-  background: #d9b587;
-  color: #000000;
+  background: var(--color-accent-light);
+  color: var(--color-text);
 }
 
 .tarot-card--favorite .tarot-card__favorite {
-  border-color: #60594d;
-  color: #60594d;
+  border-color: var(--color-accent);
+  color: var(--color-accent);
 }
 
 .tarot-card--favorite .tarot-card__favorite--active {
-  background: #60594d;
-  color: #f0f7ee;
+  background: var(--color-accent);
+  color: var(--color-text);
 }
 
 .tarot-card__position {
@@ -97,39 +98,40 @@
   flex: 1;
   padding: 0.55rem 0.75rem;
   border-radius: 12px;
-  border: 2px solid #60594d;
-  background: rgba(0, 0, 0, 0.45);
-  color: #a99479;
-  font-weight: 700;
+  border: 2px solid var(--color-border);
+  background: var(--color-bg);
+  color: var(--color-subtle);
+  font-weight: 600;
   font-size: 0.85rem;
   transition: background-color 0.15s ease, border-color 0.15s ease, color 0.15s ease;
 }
 
 .tarot-card__position-btn--active-upright {
-  border-color: #d9b587;
-  background: rgba(217, 181, 135, 0.15);
-  color: #d9b587;
+  border-color: var(--color-accent-light);
+  background: var(--accent-light-tint);
+  color: var(--color-accent-light);
 }
 
 .tarot-card__position-btn--active-reversed {
-  border-color: #889094;
-  background: rgba(136, 144, 148, 0.15);
-  color: #889094;
+  border-color: var(--color-muted);
+  background: var(--muted-tint);
+  color: var(--color-subtle);
 }
 
 .tarot-card__label {
   text-align: center;
-  font-weight: 700;
-  font-size: clamp(0.95rem, 2.5vw, 1.1rem);
+  font-family: var(--font-heading);
+  font-weight: 600;
+  font-size: clamp(1rem, 2.5vw, 1.15rem);
   margin: 0 0 0.5rem;
 }
 
 .tarot-card__label--upright {
-  color: #d9b587;
+  color: var(--color-accent-light);
 }
 
 .tarot-card__label--reversed {
-  color: #889094;
+  color: var(--color-subtle);
 }
 
 .tarot-card__body {
@@ -166,21 +168,21 @@
   min-height: 2.75rem;
   padding: 0.35rem 0.5rem;
   border-radius: 10px;
-  border: 3px solid;
+  border: 2px solid;
   font-size: clamp(0.55rem, 1.8vw, 0.65rem);
-  font-weight: 700;
+  font-weight: 600;
   text-align: center;
   word-break: break-word;
 }
 
 .point-chip--upright {
-  color: #d9b587;
-  border-color: #d9b587;
+  color: var(--color-accent-light);
+  border-color: var(--color-accent-light);
 }
 
 .point-chip--reversed {
-  color: #889094;
-  border-color: #889094;
+  color: var(--color-subtle);
+  border-color: var(--color-muted);
 }
 
 .tarot-card__desc {
@@ -189,8 +191,8 @@
   margin: 0;
   padding: clamp(0.65rem, 2vw, 1rem);
   border-radius: 10px;
-  border: 3px solid;
-  font-weight: 700;
+  border: 2px solid;
+  font-weight: 500;
   font-size: clamp(0.85rem, 2.2vw, 1.05rem);
   line-height: 1.5;
   text-align: center;
@@ -202,13 +204,13 @@
 }
 
 .tarot-card__desc--upright {
-  color: #d9b587;
-  border-color: #d9b587;
+  color: var(--color-accent-light);
+  border-color: var(--color-accent);
 }
 
 .tarot-card__desc--reversed {
-  color: #889094;
-  border-color: #889094;
+  color: var(--color-subtle);
+  border-color: var(--color-muted);
 }
 
 @media (min-width: 560px) {

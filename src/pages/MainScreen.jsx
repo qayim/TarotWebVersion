@@ -26,6 +26,11 @@ export default function MainScreen() {
         <TopBar title="Destiny's Cards" showSettings />
         <CategoryButton title="Fortune Telling" variant="fortune" onClick={() => navigate('/fortune')} />
         <CategoryButton
+          title="Divination of the Day"
+          variant="divination"
+          onClick={() => navigate('/divination')}
+        />
+        <CategoryButton
           title="Reading Aid"
           variant="readingAid"
           onClick={() => openCategory('Reading Aid', favorites)}

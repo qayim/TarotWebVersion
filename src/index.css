@@ -1,3 +1,26 @@
+:root {
+  --color-bg: #0a080c;
+  --color-text: #e8e4dc;
+  --color-accent: #8b2252;
+  --color-accent-light: #a8326a;
+  --color-surface: #1a1520;
+  --color-border: #2a2230;
+  --color-muted: #4a4050;
+  --color-subtle: #6a6070;
+
+  --font-heading: 'Cormorant Garamond', Georgia, 'Times New Roman', serif;
+  --font-body: 'DM Sans', system-ui, -apple-system, sans-serif;
+
+  --accent-tint: rgba(139, 34, 82, 0.12);
+  --accent-tint-strong: rgba(139, 34, 82, 0.22);
+  --accent-light-tint: rgba(168, 50, 106, 0.14);
+  --muted-tint: rgba(74, 64, 80, 0.2);
+  --shadow-accent: 0 8px 24px rgba(139, 34, 82, 0.22);
+  --color-error: #b84a4a;
+  --color-error-text: #e8b4b4;
+  --color-error-bg: rgba(184, 74, 74, 0.12);
+}
+
 *,
 *::before,
 *::after {
@@ -8,7 +31,7 @@
 
 html {
   min-height: 100%;
-  background-color: #000000;
+  background-color: var(--color-bg);
   overscroll-behavior-y: none;
 }
 
@@ -20,23 +43,20 @@ body,
 body {
   position: relative;
   z-index: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-  background: transparent;
-  color: #eaeaea;
+  font-family: var(--font-body);
+  background: var(--color-bg);
+  color: var(--color-text);
   -webkit-font-smoothing: antialiased;
 }
 
-body::before {
-  content: '';
-  position: fixed;
-  inset: 0;
-  z-index: -1;
-  background-color: #000000;
-  background-image: var(--page-background-image);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  pointer-events: none;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-heading);
+  font-weight: 600;
 }
 
 button {
@@ -72,7 +92,7 @@ a {
 
 .hint {
   text-align: center;
-  color: #a99479;
+  color: var(--color-subtle);
   font-size: 0.85rem;
   margin-top: 0.75rem;
   opacity: 0.85;

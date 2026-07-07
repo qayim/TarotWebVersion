@@ -10,21 +10,21 @@
   width: 100%;
   padding: 1rem 1.25rem;
   border-radius: 20px;
-  border: 3px dashed #889094;
-  background: rgba(0, 0, 0, 0.55);
-  color: #eaeaea;
-  font-weight: 700;
+  border: 2px dashed var(--color-border);
+  background: var(--color-surface);
+  color: var(--color-text);
+  font-weight: 600;
   font-size: 1rem;
   transition: background-color 0.15s ease, border-color 0.15s ease;
 }
 
 .gemini-panel__toggle:hover {
-  background: rgba(0, 0, 0, 0.72);
-  border-color: #edbe28;
+  background: var(--accent-tint);
+  border-color: var(--color-accent);
 }
 
 .gemini-panel__toggle-icon {
-  color: #edbe28;
+  color: var(--color-accent-light);
   font-size: 1.35rem;
   line-height: 1;
 }
@@ -33,12 +33,12 @@
   margin-top: 0.75rem;
   padding: clamp(0.85rem, 2.5vw, 1.25rem);
   border-radius: 20px;
-  border: 3px solid #60594d;
-  background: rgba(0, 0, 0, 0.65);
+  border: 2px solid var(--color-border);
+  background: var(--color-surface);
 }
 
 .gemini-panel__intro {
-  color: #a99479;
+  color: var(--color-subtle);
   font-size: 0.9rem;
   line-height: 1.45;
   margin-bottom: 1rem;
@@ -47,8 +47,8 @@
 
 .gemini-panel__field {
   display: block;
-  color: #edbe28;
-  font-weight: 700;
+  color: var(--color-accent-light);
+  font-weight: 600;
   font-size: 0.95rem;
   margin-bottom: 0.5rem;
 }
@@ -59,17 +59,17 @@
   padding: 0.85rem 1rem;
   margin-bottom: 0.75rem;
   border-radius: 12px;
-  border: 2px solid #60594d;
-  background: #111111;
-  color: #eaeaea;
+  border: 2px solid var(--color-border);
+  background: var(--color-bg);
+  color: var(--color-text);
   font: inherit;
   line-height: 1.5;
   resize: vertical;
 }
 
 .gemini-panel__question:focus {
-  outline: 2px solid #edbe28;
-  border-color: #edbe28;
+  outline: 2px solid var(--color-accent);
+  border-color: var(--color-accent);
 }
 
 .gemini-panel__message {
@@ -82,27 +82,27 @@
 }
 
 .gemini-panel__message--warn {
-  border: 2px solid #edbe28;
-  color: #f0ca4a;
-  background: rgba(237, 190, 40, 0.08);
+  border: 2px solid var(--color-accent);
+  color: var(--color-accent-light);
+  background: var(--accent-tint);
 }
 
 .gemini-panel__message--error {
-  border: 2px solid #c45c5c;
-  color: #ffb4b4;
-  background: rgba(196, 92, 92, 0.12);
+  border: 2px solid var(--color-error);
+  color: var(--color-error-text);
+  background: var(--color-error-bg);
 }
 
 .gemini-panel__link {
-  color: #edbe28;
+  color: var(--color-accent-light);
   text-decoration: underline;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .gemini-panel .reading-display {
   width: 100%;
   margin-top: 1rem;
-  border-color: #60594d;
+  border-color: var(--color-border);
 }
 
 .gemini-panel__reading-note {
