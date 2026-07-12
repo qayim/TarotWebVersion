@@ -1,4 +1,4 @@
-import { useMemo } from 'react';
+import { useEffect, useMemo } from 'react';
 import { useLocation, useParams } from 'react-router-dom';
 import { cards as allCards } from '../data/cards';
 import { useFavorites } from '../context/FavoritesContext';
@@ -19,6 +19,14 @@ export default function CardScreen() {
     [cards, positions]
   );
 
+  useEffect(() => {
+    const focusCardId = location.state?.focusCardId;
+    if (!focusCardId) return;
+
+    const target = document.getElementById(`card-${focusCardId}`);
+    target?.scrollIntoView({ behavior: 'smooth', block: 'center' });
+  }, [location.state]);
+
   return (
     <main className="screen">
       <div className="screen-content">
@@ -30,8 +38,8 @@ export default function CardScreen() {
             </p>
           ) : (
             cards.map((card) => (
-              <TarotCard
-                key={card.id}
+              <div key={card.id} id={`card-${card.id}`}>
+                <TarotCard
                 id={card.id}
                 cardName={card.cardName}
                 type={card.cardType}
@@ -41,7 +49,8 @@ export default function CardScreen() {
                 upDesc={card.upDesc}
                 revDesc={card.revDesc}
                 allowPositionSelect={isReadingAid}
-              />
+                />
+              </div>
             ))
           )}
         </div>

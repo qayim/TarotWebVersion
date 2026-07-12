@@ -55,3 +55,50 @@
   text-align: center;
   opacity: 0.85;
 }
+
+.divination__links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  width: min(90%, 620px);
+  margin: 1.5rem auto 0;
+}
+
+.divination__link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  width: 100%;
+  padding: 1.1rem 1.35rem;
+  border-radius: 20px;
+  border: 2px solid var(--color-border);
+  background: var(--color-surface);
+  color: var(--color-text);
+  text-decoration: none;
+  transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease,
+    background-color 0.15s ease;
+}
+
+.divination__link:hover {
+  transform: translateY(-2px);
+  border-color: var(--color-accent);
+  background: var(--accent-tint);
+  box-shadow: var(--shadow-accent);
+}
+
+.divination__link-label {
+  font-family: var(--font-heading);
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--color-accent-light);
+}
+
+.divination__link-type {
+  flex-shrink: 0;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--color-subtle);
+}

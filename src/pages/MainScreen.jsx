@@ -3,6 +3,7 @@ import { cards } from '../data/cards';
 import { useFavorites } from '../context/FavoritesContext';
 import TopBar from '../components/TopBar';
 import CategoryButton from '../components/CategoryButton';
+import CardSearch from '../components/CardSearch';
 
 const CATEGORIES = ['Cups', 'Wands', 'Swords', 'Pentacles', 'Major'];
 
@@ -24,6 +25,7 @@ export default function MainScreen() {
     <main className="screen">
       <div className="screen-content">
         <TopBar title="Destiny's Cards" showSettings />
+        <CardSearch />
         <CategoryButton title="Fortune Telling" variant="fortune" onClick={() => navigate('/fortune')} />
         <CategoryButton
           title="Divination of the Day"
