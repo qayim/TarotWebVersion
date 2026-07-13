@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import TopBar from '../components/TopBar';
-import { drawDailyDivination } from '../utils/dailyDivination';
+import { getDailyDivination } from '../utils/dailyDivination';
 import './DivinationScreen.css';
 
 function getCategoryLabel(category) {
@@ -27,7 +27,7 @@ const SOCIAL_LINKS = [
 ];
 
 export default function DivinationScreen() {
-  const [{ card, quote }] = useState(drawDailyDivination);
+  const [{ card, quote }] = useState(getDailyDivination);
 
   return (
     <main className="screen">
@@ -41,7 +41,7 @@ export default function DivinationScreen() {
           <blockquote className="divination__quote">{quote}</blockquote>
         </article>
 
-        <p className="divination__hint">Open this page again anytime for a new card.</p>
+        <p className="divination__hint">Your card stays the same for 24 hours. Come back tomorrow for a new one.</p>
 
         <nav className="divination__links" aria-label="Social links">
           {SOCIAL_LINKS.map((link) => (
