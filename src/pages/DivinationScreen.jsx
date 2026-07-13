@@ -10,8 +10,8 @@ function getCategoryLabel(category) {
 
 const SOCIAL_LINKS = [
   {
-    label: '333eonccc.com',
-    href: 'https://333eonccc.com',
+    label: 'eon.333eonccc.com',
+    href: 'https://eon.333eonccc.com/',
     description: 'Shop',
   },
   {
